@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 .section__header {
     width: 100%;
     max-width: 950px;
-    padding: 90px 0;
+    padding: 70px 0;
     margin: 0 auto 40px;
     text-align: center;
 }
@@ -256,4 +256,22 @@ img {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+/* PORTFOLIO */
+.portfolio__wrapper {
+    padding-top: 30px;
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(4, 300px);
+    grid-auto-rows: 300px;
+    gap: 5px;
+}
+.vertical {
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+.portfolio__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
